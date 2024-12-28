@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 30px;
+}
+body{
+  display: flex;
+  height:100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(to left,#CDC1FF,#FBF6E9);
+}
+
+.player{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 20vh;
+  width: 70vw;
+  /* border: 1px solid black; */
+}
+.player span{
+  width: 20vw;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.dice_parent{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  width: 70vw;
+  gap: 10px;
+}
+
+@media (max-width:600px) and (min-width:300px){
+  body{
+    gap: 20px;
+  }
+  .player{
+    height: 10vh;
+    justify-content: space-around;
+  }
+  .dice_parent{
+    justify-content: space-around;
+  }
+  .player span{
+    font-size: 18px;
+  }
+  .dice2 img{
+    height: 120px;
+    width: 120px;
+  }
+  .dice1 img{
+    height: 120px;
+    width: 120px;
+  }
+  .btn{
+    height: 40px;
+    width: 70px;
+  }
+}
+
+
+@media (max-width:300px) and (min-width:100px){
+  body{
+    gap: 5px;
+  }
+  .player{
+    height: 4vh;
+    justify-content: space-around;
+  }
+  .player span{
+    font-size: 10px;
+  }
+  .dice2 img{
+    height: 70px;
+    width: 70px;
+  }
+  .dice1 img{
+    height: 70px;
+    width: 70px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .btn{
+    height: 40px;
+    width: 70px;
+  }
+  .dice_parent{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:900px) and (min-width:600px){
+  body{
+    gap: 20px;
+  }
+  .player{
+    height: 10vh;
+    justify-content: space-around;
+  }
+  .player span{
+    font-size: 18px;
+  }
+  .dice2 img{
+    height: 200px;
+    width: 200px;
+  }
+  .dice1 img{
+    height: 200px;
+    width: 200px;
+  }
+  .btn{
+    height: 40px;
+    width: 70px;
+  }
+  .dice_parent{
+    justify-content: space-around;
+  }
+}
+.dice1 , .dice2{
+  height: 35vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  height: 50px;
+  width: 200px;
+  border: 2px solid transparent;
+  background-color: rgba(81, 81, 242, 0.959);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transition: ease-in-out 200ms;
+  background-color: rgba(46, 46, 173, 0.959);
+}
